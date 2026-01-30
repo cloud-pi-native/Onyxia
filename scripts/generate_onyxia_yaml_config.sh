@@ -25,7 +25,7 @@ service:
       version: ${ONYXIA_CUSTOM_IMAGE} 
 init:
   regionInit: ""
-  personalInit: https://raw.githubusercontent.com/Falltrades/Onyxia/refs/heads/main/scripts/post-install-light.sh
+  personalInit: https://raw.githubusercontent.com/cloud-pi-native/Onyxia/refs/heads/main/scripts/post-install-light.sh
   personalInitArgs: "" 
 extraEnvVars:
   - name: GITHUB_USERNAME
@@ -64,7 +64,7 @@ git:
   email: ${GITHUB_USERMAIL} 
   cache: "0"
   token: "${GIT_PERSONAL_TOKEN}"
-  repository: https://github.com/falltrades/onyxia.git 
+  repository: https://github.com/cloud-pi-native/Onyxia.git
   branch: ""
 ingress:
   enabled: false
